@@ -41,7 +41,7 @@ bool Engine::init(const std::string title, int width, int height) {
     this->width = width;
     this->height = height;
 
-    renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    renderer = SDL_CreateRenderer(window, -1, /*SDL_RENDERER_ACCELERATED*/ SDL_RENDERER_SOFTWARE);
     if(!renderer) {
         sprintf(errMsg, "Error while creating renderer: %s", SDL_GetError());
         success = false;

@@ -9,9 +9,17 @@
 
 
 void Episode2::render() {
-    SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, SDL_ALPHA_OPAQUE);
+    SDL_SetRenderDrawColor(renderer, gradient, gradient, gradient, SDL_ALPHA_OPAQUE);
     SDL_RenderSetViewport(renderer, nullptr);
     SDL_RenderClear(renderer);
+    
+    if (gradient == 0) {
+        direction = 1;
+    } else if (gradient == 255) {
+        direction = -1;
+    }
+
+    gradient = gradient + direction;
     
     draw();
     
