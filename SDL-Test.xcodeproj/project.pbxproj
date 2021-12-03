@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8D428A427598EFF00955B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D428A327598EFF00955B88 /* AppDelegate.m */; };
 		F8D428A627598F0000955B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D428A527598F0000955B88 /* Assets.xcassets */; };
-		F8D428A927598F0000955B88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D428A727598F0000955B88 /* MainMenu.xib */; };
-		F8D428AC27598F0000955B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D428AB27598F0000955B88 /* main.m */; };
+		F8D428B62759906300955B88 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D428B52759906300955B88 /* main.cpp */; };
+		F8D428BD2759936600955B88 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D428BA275990F600955B88 /* SDL2.framework */; };
+		F8D428BE2759936600955B88 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8D428BA275990F600955B88 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8D428C32759958700955B88 /* engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D428C12759958700955B88 /* engine.cpp */; };
+		F8D428C827599EC500955B88 /* episode1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D428C627599EC500955B88 /* episode1.cpp */; };
+		F8D428CB27599FBD00955B88 /* episode2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8D428C927599FBD00955B88 /* episode2.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8D428BF2759936600955B88 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8D428BE2759936600955B88 /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F8D4289F27598EFF00955B88 /* SDL-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDL-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8D428A227598EFF00955B88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F8D428A327598EFF00955B88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F8D428A527598F0000955B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F8D428A827598F0000955B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F8D428AA27598F0000955B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8D428AB27598F0000955B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8D428AD27598F0000955B88 /* SDL_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDL_Test.entitlements; sourceTree = "<group>"; };
+		F8D428B52759906300955B88 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F8D428BA275990F600955B88 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		F8D428C12759958700955B88 /* engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = engine.cpp; sourceTree = "<group>"; };
+		F8D428C22759958700955B88 /* engine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = engine.hpp; sourceTree = "<group>"; };
+		F8D428C4275996A500955B88 /* sdl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sdl.hpp; sourceTree = "<group>"; };
+		F8D428C627599EC500955B88 /* episode1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = episode1.cpp; sourceTree = "<group>"; };
+		F8D428C727599EC500955B88 /* episode1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = episode1.hpp; sourceTree = "<group>"; };
+		F8D428C927599FBD00955B88 /* episode2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = episode2.cpp; sourceTree = "<group>"; };
+		F8D428CA27599FBD00955B88 /* episode2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = episode2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D428BD2759936600955B88 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,7 @@
 			children = (
 				F8D428A127598EFF00955B88 /* SDL-Test */,
 				F8D428A027598EFF00955B88 /* Products */,
+				F8D428B9275990F600955B88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,15 +78,43 @@
 		F8D428A127598EFF00955B88 /* SDL-Test */ = {
 			isa = PBXGroup;
 			children = (
-				F8D428A227598EFF00955B88 /* AppDelegate.h */,
-				F8D428A327598EFF00955B88 /* AppDelegate.m */,
+				F8D428C527599EA000955B88 /* Tutorial */,
+				F8D428C02759955D00955B88 /* Engine */,
 				F8D428A527598F0000955B88 /* Assets.xcassets */,
-				F8D428A727598F0000955B88 /* MainMenu.xib */,
 				F8D428AA27598F0000955B88 /* Info.plist */,
-				F8D428AB27598F0000955B88 /* main.m */,
 				F8D428AD27598F0000955B88 /* SDL_Test.entitlements */,
+				F8D428B52759906300955B88 /* main.cpp */,
 			);
 			path = "SDL-Test";
+			sourceTree = "<group>";
+		};
+		F8D428B9275990F600955B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8D428BA275990F600955B88 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8D428C02759955D00955B88 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F8D428C12759958700955B88 /* engine.cpp */,
+				F8D428C22759958700955B88 /* engine.hpp */,
+				F8D428C4275996A500955B88 /* sdl.hpp */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		F8D428C527599EA000955B88 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				F8D428C627599EC500955B88 /* episode1.cpp */,
+				F8D428C727599EC500955B88 /* episode1.hpp */,
+				F8D428C927599FBD00955B88 /* episode2.cpp */,
+				F8D428CA27599FBD00955B88 /* episode2.hpp */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +127,7 @@
 				F8D4289B27598EFF00955B88 /* Sources */,
 				F8D4289C27598EFF00955B88 /* Frameworks */,
 				F8D4289D27598EFF00955B88 /* Resources */,
+				F8D428BF2759936600955B88 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D428A627598F0000955B88 /* Assets.xcassets in Resources */,
-				F8D428A927598F0000955B88 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,23 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D428AC27598F0000955B88 /* main.m in Sources */,
-				F8D428A427598EFF00955B88 /* AppDelegate.m in Sources */,
+				F8D428CB27599FBD00955B88 /* episode2.cpp in Sources */,
+				F8D428B62759906300955B88 /* main.cpp in Sources */,
+				F8D428C32759958700955B88 /* engine.cpp in Sources */,
+				F8D428C827599EC500955B88 /* episode1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F8D428A727598F0000955B88 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8D428A827598F0000955B88 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F8D428AE27598F0000955B88 /* Debug */ = {
@@ -271,6 +314,10 @@
 				CODE_SIGN_ENTITLEMENTS = "SDL-Test/SDL_Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "SDL-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,6 +336,10 @@
 				CODE_SIGN_ENTITLEMENTS = "SDL-Test/SDL_Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "SDL-Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
