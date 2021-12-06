@@ -44,6 +44,7 @@
 		F8D428C727599EC500955B88 /* episode1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = episode1.hpp; sourceTree = "<group>"; };
 		F8D428C927599FBD00955B88 /* episode2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = episode2.cpp; sourceTree = "<group>"; };
 		F8D428CA27599FBD00955B88 /* episode2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = episode2.hpp; sourceTree = "<group>"; };
+		F8D681C1275BB8E50045CCB6 /* ramdisk.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ramdisk.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 				F8D428AA27598F0000955B88 /* Info.plist */,
 				F8D428AD27598F0000955B88 /* SDL_Test.entitlements */,
 				F8D428B52759906300955B88 /* main.cpp */,
+				F8D681C1275BB8E50045CCB6 /* ramdisk.sh */,
 			);
 			path = "SDL-Test";
 			sourceTree = "<group>";

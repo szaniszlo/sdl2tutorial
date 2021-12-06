@@ -32,15 +32,15 @@ public:
     virtual void errorToConsole();
 
 public:
-    SDL_Renderer *renderer;
-    int width, height;
+    SDL_Renderer *renderer = nullptr;
+    int width, height = 0;
 
 private:
-    bool success;
-    bool quit;
-    char errMsg[1024];
+    bool success = true;
+    bool quit = false;
+    char errMsg[1024] = "";
     
-    SDL_Window *window;
+    SDL_Window *window = nullptr;
     
 };
 
